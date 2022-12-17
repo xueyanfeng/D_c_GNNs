@@ -54,7 +54,7 @@ for data_name in datasets:
             dataset=data_train, batch_size=batch_size, shuffle=True
         )
         dataload_test = DataLoader(dataset=data_test, batch_size=batch_size)
-        model = MLPClassifier(hidden_layer_sizes=(32), batch_size=1024, max_iter=10000)
+        model = MLPClassifier()
         set_seed(i)  # 设置随机种子
 
         batch_time = 0
