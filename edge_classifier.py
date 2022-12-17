@@ -55,7 +55,7 @@ for data_name in datasets:
         )
         dataload_test = DataLoader(dataset=data_test, batch_size=batch_size)
         model = MLPClassifier()
-        set_seed(i)  # 设置随机种子
+        set_seed(i)  # set random seed
 
         batch_time = 0
         for data in dataload_train:
